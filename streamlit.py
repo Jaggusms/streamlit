@@ -47,3 +47,4 @@ st.dataframe(table)
 
 st.audio("ye_mere_rajaha.mp3")
 st.audio("Aduvari _Matalaku.mp3")
+st.video("ammaye_sannaga.mp4")
