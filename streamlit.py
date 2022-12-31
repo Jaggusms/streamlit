@@ -29,11 +29,8 @@ st.latex(r"\begin{pmatrix}a & b \\c & d\end{pmatrix}")
 
 st.json({1:"1,2",2:"2"})
 code="""
-print("hey missu how are you")
-def yours():
-  return "because, i am yours and you are ..."
 def good():
-  return "Why do you care how I am?"+yours()
+  return "Why do you care how I am?"
 """
 st.code(code,language="python")
 # we can use write instead of markdown
