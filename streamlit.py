@@ -1,5 +1,22 @@
 import streamlit as st
 from PIL import Image
+st.radio("what is ur best meme scene?",options=("nirangan garu","venky train scene","padmanabhasimha scene","sontham meme","anaganaga oka pedavaadu","king"))
+st.selectbox("what is ur best meme charecter of brammi?",options=("venky train scene","padmanabhasimha scene","king","nellori peddareddy","D"))
+st.multiselect("what is ur best meme scene?",options=("nirangan garu","venky train scene","padmanabhasimha scene","sontham meme","anaganaga oka pedavaadu"))
+
+def clicked():
+  #print("button cliked")
+  pass
+st.button("login",on_click=clicked())
+
+def change():
+  #print(st.session_state.checker)
+  pass
+state=st.checkbox("select",on_change=change,key="checker")
+if not state:
+  st.write("you are unchecked")
+else:
+  st.write("you are checked")
 st.title("welocome to streamlit")
 st.subheader("hi i am subhear")
 st.header("i am header")
@@ -45,3 +62,27 @@ st.dataframe(table)
 st.audio("ye_mere_rajaha.mp3")
 st.audio("Aduvari _Matalaku.mp3")
 st.video("ammaye_sannaga.mp4")
+
+st.markdown("""
+<style>
+.css-1rs6os.edgvbvh3
+{
+  visibility:hidden
+}
+</style>
+            """,unsafe_allow_html=True)
+
+
+# def change():
+#   print("changed")
+# state=st.checkbox("select",on_change=change)
+# if not state:
+#   st.write("you are unchecked")
+# else:
+#   st.write("you are checked")
+state=st.checkbox("select", value=True)
+if state:
+  st.write("you are checked")
+else:
+  st.write("you are unchecked")  
+
